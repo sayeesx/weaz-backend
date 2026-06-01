@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Weaz AI Automation Backend API",
   "main": "dist/server.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "nodemon --watch src -e ts --exec ts-node src/server.ts",
     "build": "tsc",
