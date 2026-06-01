@@ -1,0 +1,44 @@
+﻿--- 7. Razorpay negative test ---
+Verify Status without token: 401
+Verify Response without token: {
+  success: false,
+  data: null,
+  error: {
+    code: 'UNAUTHORIZED',
+    message: 'Missing or invalid Authorization header'
+  }
+}
+
+--- 9. Auth proof ---
+Auth valid token status: 404
+Auth invalid token status: 404
+Auth no token status: 404
+
+--- 7. Razorpay negative test (with auth) ---
+Razorpay verify invalid sig status: 400
+Razorpay verify invalid sig response: {
+  success: false,
+  data: null,
+  error: {
+    code: 'PAYMENT_SIGNATURE_INVALID',
+    message: 'Invalid payment signature'
+  }
+}
+
+--- 8. Razorpay positive test (unit simulation) ---
+Cart fetch: {
+  success: false,
+  data: null,
+  error: { code: 'DB_ERROR', message: 'Failed to create cart' }
+}
+Checkout response: {
+  success: false,
+  data: null,
+  error: { code: 'NOT_FOUND', message: 'No active cart found' }
+}
+
+--- 11. AI Scope proof ---
+
+--- 15. CORS proof ---
+CORS Bad Origin Status: 400
+CORS ACAO Header: http://bad-hacker-site.com

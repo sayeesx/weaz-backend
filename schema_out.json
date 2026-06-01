@@ -1,0 +1,41 @@
+{
+  "products": [
+    "id",
+    "business_id",
+    "name",
+    "category",
+    "description",
+    "unit",
+    "price",
+    "stock_quantity",
+    "is_available",
+    "tags",
+    "created_at",
+    "updated_at"
+  ],
+  "carts": [
+    "id",
+    "user_id",
+    "business_id",
+    "status",
+    "subtotal",
+    "delivery_fee",
+    "total",
+    "created_at",
+    "updated_at"
+  ],
+  "orders": [],
+  "payments": [],
+  "chat_sessions": [
+    "id",
+    "user_id",
+    "business_id",
+    "title",
+    "channel",
+    "status",
+    "language",
+    "last_message_at",
+    "created_at",
+    "updated_at"
+  ]
+}

@@ -1,0 +1,53 @@
+﻿BUSINESSES: [ { id: '9194479d-3ae9-4a80-893a-3b4913b97208', name: 'Weaz' } ] null
+ORDERS: [] null
+PAYMENTS: [] null
+ORDER_PAYMENTS: null {
+  code: 'PGRST205',
+  details: null,
+  hint: "Perhaps you meant the table 'public.payments'",
+  message: "Could not find the table 'public.order_payments' in the schema cache"
+}
+CHAT_MESSAGES: [
+  {
+    id: 'ca0c1c8f-ad2a-4366-b927-4b0bd9a7b37c',
+    session_id: 'c95f6c7b-cd9d-478e-9c21-964386b8f275',
+    user_id: '37dc5d38-0985-4a13-8bff-c670bdfcdc8a',
+    business_id: '9194479d-3ae9-4a80-893a-3b4913b97208',
+    role: 'user',
+    content: 'who is',
+    language: null,
+    intent: null,
+    metadata: {},
+    created_at: '2026-05-31T18:48:04.546899+00:00'
+  }
+] null
+AI_INTERACTIONS: [
+  {
+    id: '020840c1-a1c5-41d5-b334-9ee61946b3b6',
+    session_id: 'c95f6c7b-cd9d-478e-9c21-964386b8f275',
+    user_id: '37dc5d38-0985-4a13-8bff-c670bdfcdc8a',
+    business_id: '9194479d-3ae9-4a80-893a-3b4913b97208',
+    model: 'groq',
+    prompt_tokens: 1394,
+    completion_tokens: 50,
+    total_tokens: 1444,
+    latency_ms: 1735,
+    intent: 'general',
+    language: 'en',
+    success: true,
+    error: null,
+    created_at: '2026-05-31T18:48:06.482809+00:00'
+  }
+] null
+SUPPORT_TICKETS: [] null
+CART_ITEMS: [
+  {
+    id: '545cdd66-a6b0-41dd-9ac6-fc982210a657',
+    cart_id: 'f30e2da0-c2e3-4e2f-a232-c97ae021c7fb',
+    product_id: 'c5cd575b-fad3-4c1e-bcea-3f59b2396d73',
+    quantity: 1,
+    unit_price: 28,
+    line_total: 28,
+    created_at: '2026-05-31T18:51:20.937647+00:00'
+  }
+] null

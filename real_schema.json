@@ -1,0 +1,103 @@
+{
+  "products": [
+    "id",
+    "business_id",
+    "name",
+    "category",
+    "description",
+    "unit",
+    "price",
+    "stock_quantity",
+    "is_available",
+    "tags",
+    "created_at",
+    "updated_at"
+  ],
+  "carts": [
+    "id",
+    "user_id",
+    "business_id",
+    "status",
+    "subtotal",
+    "delivery_fee",
+    "total",
+    "created_at",
+    "updated_at"
+  ],
+  "orders_error": {
+    "code": "23502",
+    "details": "Failing row contains (c8bac8a8-4081-4d64-8e9f-c2441104685f, 00000000-0000-0000-0000-000000000000, null, null, null, pending_payment, pending, null, null, null, null, null, 10, 2026-06-01 08:54:45.135711+00, 2026-06-01 08:54:45.135711+00).",
+    "hint": null,
+    "message": "null value in column \"business_id\" of relation \"orders\" violates not-null constraint"
+  },
+  "orders_select": "ok",
+  "payments": "empty",
+  "chat_sessions": [
+    "id",
+    "user_id",
+    "business_id",
+    "title",
+    "channel",
+    "status",
+    "language",
+    "last_message_at",
+    "created_at",
+    "updated_at"
+  ],
+  "chat_messages": [
+    "id",
+    "session_id",
+    "user_id",
+    "business_id",
+    "role",
+    "content",
+    "language",
+    "intent",
+    "metadata",
+    "created_at"
+  ],
+  "ai_interactions": [
+    "id",
+    "session_id",
+    "user_id",
+    "business_id",
+    "model",
+    "prompt_tokens",
+    "completion_tokens",
+    "total_tokens",
+    "latency_ms",
+    "intent",
+    "language",
+    "success",
+    "error",
+    "created_at"
+  ],
+  "businesses": [
+    "id",
+    "name",
+    "slug",
+    "description",
+    "type",
+    "default_language",
+    "support_phone",
+    "support_email",
+    "is_active",
+    "created_at",
+    "updated_at"
+  ],
+  "cart_items": [
+    "id",
+    "cart_id",
+    "product_id",
+    "quantity",
+    "unit_price",
+    "line_total",
+    "created_at"
+  ],
+  "categories": {
+    "code": "PGRST205",
+    "details": null,
+    "hint": "Perhaps you meant the table 'public.chat_messages'",
+    "message": "Could not find the table 'public.categories' in the schema cache"
+  }
+}

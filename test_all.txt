@@ -1,0 +1,23 @@
+PRODUCTS:  [
+  'id',           'business_id',
+  'name',         'category',
+  'description',  'unit',
+  'price',        'stock_quantity',
+  'is_available', 'tags',
+  'created_at',   'updated_at'
+]
+CARTS:  [
+  'id',
+  'user_id',
+  'business_id',
+  'status',
+  'subtotal',
+  'delivery_fee',
+  'total',
+  'created_at',
+  'updated_at'
+]
+TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at check (C:\Users\unknown user\OneDrive\Desktop\Narrs\Narrs-Whatsapp-Automation\backend\test_all.ts:20:43)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)

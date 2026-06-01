@@ -1,0 +1,18 @@
+Orders error: {
+  code: '23502',
+  details: 'Failing row contains (2d00de71-3b67-46ed-8a94-c2aefd2e9b6a, null, null, null, null, pending_payment, pending, null, null, null, null, null, 10, 2026-06-01 08:29:27.707716+00, 2026-06-01 08:29:27.707716+00).',
+  hint: null,
+  message: 'null value in column "user_id" of relation "orders" violates not-null constraint'
+}
+Payments error: {
+  code: 'PGRST205',
+  details: null,
+  hint: "Perhaps you meant the table 'public.payments'",
+  message: "Could not find the table 'public.order_payments' in the schema cache"
+}
+Chat errors: {
+  code: '23502',
+  details: 'Failing row contains (d643d5e4-d407-4e62-a99d-bd13647e4959, null, null, New chat, web_simulator, active, null, 2026-06-01 08:29:29.658854+00, 2026-06-01 08:29:29.658854+00, 2026-06-01 08:29:29.658854+00).',
+  hint: null,
+  message: 'null value in column "user_id" of relation "chat_sessions" violates not-null constraint'
+}

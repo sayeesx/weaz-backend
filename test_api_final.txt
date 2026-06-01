@@ -1,0 +1,64 @@
+--- 7. Razorpay negative test ---
+Verify Status without token: 401
+Verify Response without token: {
+  success: false,
+  data: null,
+  error: {
+    code: 'UNAUTHORIZED',
+    message: 'Missing or invalid Authorization header'
+  }
+}
+
+--- 9. Auth proof ---
+Auth valid token status: 404
+Auth invalid token status: 404
+Auth no token status: 404
+
+--- 7. Razorpay negative test (with auth) ---
+Razorpay verify invalid sig status: 400
+Razorpay verify invalid sig response: {
+  success: false,
+  data: null,
+  error: {
+    code: 'PAYMENT_SIGNATURE_INVALID',
+    message: 'Invalid payment signature'
+  }
+}
+
+--- 8. Razorpay positive test (unit simulation) ---
+Cart fetch: {
+  success: true,
+  data: {
+    id: '5751161b-6965-4e5b-8592-1f3062aa8877',
+    user_id: '4fa04e9b-4ecb-4214-952e-f58114db3d62',
+    business_id: '9194479d-3ae9-4a80-893a-3b4913b97208',
+    status: 'active',
+    subtotal: 0,
+    delivery_fee: 25,
+    total: 25,
+    created_at: '2026-06-01T09:07:38.546116+00:00',
+    updated_at: '2026-06-01T09:07:38.546116+00:00',
+    items: []
+  },
+  error: null
+}
+Checkout response: {
+  success: false,
+  data: null,
+  error: { code: 'CART_EMPTY', message: 'Cart is empty' }
+}
+
+--- 11. AI Scope proof ---
+
+AI Query: who is the prime minister
+Response content: I'm not able to provide information on general knowledge. However, I can help you with Weaz services. Would you like to know about our delivery areas, products, or something else?
+
+AI Query: onion price ethra
+Response content: Onion: ₹40 / 1 kg
+
+AI Query: 2 kg savala and 1 paal packet venam
+Response content: You want to buy 2 kg Onion and 1 Milk Packet. Onion price is ₹40/kg and Milk Packet price is ₹28.
+
+--- 15. CORS proof ---
+CORS Bad Origin Status: 400
+CORS ACAO Header: http://bad-hacker-site.com

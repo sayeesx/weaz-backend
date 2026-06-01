@@ -1,0 +1,9 @@
+﻿src/routes/auth.routes.ts(24,31): error TS2339: Property 'createOrUpdateProfile' does not exist on type 'typeof AuthController'.
+src/routes/auth.routes.ts(27,52): error TS2339: Property 'getMe' does not exist on type 'typeof AuthController'.
+src/routes/business.routes.ts(8,50): error TS2339: Property 'getWeazBusiness' does not exist on type 'typeof BusinessController'.
+src/routes/cart.routes.ts(10,51): error TS2339: Property 'updateItem' does not exist on type 'typeof CartController'.
+src/routes/cart.routes.ts(12,45): error TS2339: Property 'checkout' does not exist on type 'typeof CartController'.
+src/routes/chat.routes.ts(11,64): error TS2339: Property 'getSessionMessages' does not exist on type 'typeof ChatController'.
+src/routes/orders.routes.ts(3,10): error TS2724: '"../controllers/orders.controller"' has no exported member named 'OrdersController'. Did you mean 'OrderController'?
+src/routes/products.routes.ts(8,43): error TS2339: Property 'getProducts' does not exist on type 'typeof ProductsController'.
+src/services/chat.service.ts(139,9): error TS2739: Type 'WeazSettings' is missing the following properties from type 'WeazSettings': type, minimumOrderValue

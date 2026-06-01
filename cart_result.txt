@@ -1,0 +1,6 @@
+﻿Result: {
+  code: '22P02',
+  details: null,
+  hint: null,
+  message: 'invalid input syntax for type uuid: "default_weaz_business"'
+}
