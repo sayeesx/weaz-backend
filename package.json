@@ -25,12 +25,12 @@
     "pino": "^8.19.0",
     "pino-pretty": "^10.3.1",
     "razorpay": "^2.9.6",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@types/node": "^20.11.24",
     "nodemon": "^3.1.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "ts-node": "^10.9.2"
   }
 }
